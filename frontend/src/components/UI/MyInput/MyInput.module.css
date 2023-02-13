@@ -1,0 +1,21 @@
+.input {
+    font-size: 12pt;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: #e1e1e1 solid 1px;
+    font-family: system-ui, -apple-system, arial, serif;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-appearance: none;
+}
+
+.input::placeholder {
+    color: #e1e1e1;
+}
+
+.input:focus {
+    border: #9fadf3 solid 1px;
+    -webkit-box-shadow: 0 0 1pt 1pt cornflowerblue;
+    box-shadow: 0 0 1pt 1pt cornflowerblue;
+}

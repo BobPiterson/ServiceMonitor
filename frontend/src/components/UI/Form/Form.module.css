@@ -1,0 +1,41 @@
+.modalWindow {
+    background-color: lightcyan;
+    /*background-color: inherit;*/
+    width: 40%;
+    max-width: 500px;
+    margin: 30px auto auto;
+    padding: 10px;
+    text-align: center;
+    border: #e1e1e1 solid 1px;
+    border-radius: 10px;
+    font-size: 10pt;
+}
+
+.modalWindow2 {
+    background-color: red;
+}
+
+.modalWindow input, .modalWindow button {
+    margin-bottom: 15px;
+    width: 90%;
+}
+
+.labelReg {
+    margin-top: 7px;
+    margin-bottom: 10px;
+    color: #606060;
+}
+
+.error {
+    width: 90%;
+    padding: 5px 0 5px 0;
+    font-size: 13pt;
+    background-color: #ffbebe;
+    border-radius: 4px;
+    margin: auto auto 15px auto;
+}
+
+.fieldError {
+    -webkit-box-shadow: 0 0 1pt 1pt #e31021;
+    box-shadow: 0 0 1pt 1pt #e31021;
+}

@@ -1,0 +1,18 @@
+.button {
+    font-size: 15pt;
+    padding: 10px;
+    border-radius: 5px;
+    border: #e1e1e1 solid 1px;
+    font-family: system-ui, -apple-system, arial, serif;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    cursor: pointer;
+    transition: 300ms;
+    color: white;
+    background-color: #24BA91;
+}
+
+.button:hover {
+    background-color: #22b08c;
+    color: #000000;
+}
