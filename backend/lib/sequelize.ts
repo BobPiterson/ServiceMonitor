@@ -5,11 +5,8 @@ function sequelizeLog(message?: any) {
 }
 
 export const sequelize = new Sequelize({
-    database: 'chat_DB',
-    dialect: 'mariadb',
-    host: '192.168.1.21',
-    username: 'chat',
-    password: 'flq-23q-so5-q1l',
+    dialect: 'sqlite',
+    storage: '../sqlite/database.sqlite',
     models: [__dirname + '/models'],
     logging: sequelizeLog
 });
