@@ -12,7 +12,7 @@ const server = createServer(app);
 const port = process.env.PORT ?? 3001;
 export const env = process.env.NODE_ENV || 'development';
 const serverUrl = env === 'development' ? '/api' : ''
-export const tokenKey = 'dkf4-l7bv-b2H6-5$m9'
+export const tokenKey = 'fqrt-fq2d-134g-f14j'
 export const captchaSecret = '6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe'
 
 // middleware
