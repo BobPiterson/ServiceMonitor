@@ -67,9 +67,9 @@ const RegisterForm = () => {
     }
 
     return (
-        <Form nameForm="Registration" nameButton="Register" fields={fields} click={ButtonClick} Error={Error}
+        <Form nameForm="Регистрация" nameButton="Зарегистрироваться" fields={fields} click={ButtonClick} Error={Error}
               CaptchaField={true}>
-            <p>By registering, you agree to the <span className={classes.span}>terms of use </span></p>
+            <p>Регистрируясь, вы соглашаетесь с <span className={classes.span}>Правилами использования</span></p>
         </Form>
     );
 };

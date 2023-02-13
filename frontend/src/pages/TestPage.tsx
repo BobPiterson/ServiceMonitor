@@ -1,8 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import {getAllServices} from "../api/getAllServices";
 
 const TestPage = () => {
+    async function getServices() {
+        await getAllServices()
+    }
+
+    useEffect(() => {
+        getServices()
+    }, [])
     return (
-        <div className='inline-block m-10 p-5 text-white border-2 rounded-2xl'>Test</div>
+        <div>Test</div>
     );
 };
 

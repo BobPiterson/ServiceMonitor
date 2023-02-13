@@ -6,6 +6,7 @@ import {sequelize} from "./sequelize";
 import {createServer} from "http";
 import {createSocket} from "./socket";
 import {adminRouter} from "./routes/adminRouter";
+import {servicesRouter} from "./routes/servicesRouter";
 
 const app = express()
 const server = createServer(app);
@@ -17,7 +18,7 @@ export const captchaSecret = '6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe'
 
 // middleware
 app.use(express.json())
-app.use(express.urlencoded({extended: false}))
+app.use(express.urlencoded({extended: true}))
 
 // my middleware
 app.use(loggerMiddleware)
@@ -26,6 +27,7 @@ app.use(verifyTokenMiddleware)
 // routers
 app.use(serverUrl + '/user', usersRouter)
 app.use(serverUrl + '/admin', adminRouter)
+app.use(serverUrl + '/services', servicesRouter)
 
 // start
 ;(async () => {

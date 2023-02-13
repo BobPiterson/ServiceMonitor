@@ -6,7 +6,7 @@ function sequelizeLog(message?: any) {
 
 export const sequelize = new Sequelize({
     dialect: 'sqlite',
-    storage: '../../sqlite/database.sqlite',
+    storage: '../sqlite/database.sqlite',
     models: [__dirname + '/models'],
     logging: sequelizeLog
 });

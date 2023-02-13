@@ -46,7 +46,7 @@ const LoginForm = () => {
         }
     }
     return (
-        <Form nameForm="Authorization" nameButton="Login" fields={fields} click={ButtonClick} Error={Error}
+        <Form nameForm="Авторизация" nameButton="Войти" fields={fields} click={ButtonClick} Error={Error}
               CaptchaField={true}></Form>
     );
 };
