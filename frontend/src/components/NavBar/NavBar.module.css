@@ -1,0 +1,91 @@
+.navLink {
+    user-select: none;
+    -webkit-user-drag: none;
+    color: white;
+    text-decoration: none;
+}
+
+.leftNavs {
+    transition: 250ms;
+}
+
+.CurrentNavLink {
+    color: #4c4b4d;
+    transition: 250ms;
+}
+
+.leftNavs:hover {
+    color: #868686;
+}
+
+.navBar {
+    font-size: 13pt;
+    display: flex;
+    padding: 7px;
+    vertical-align: middle;
+}
+
+.navUl {
+    padding: 0;
+    width: 100%;
+    align-self: center;
+    list-style: none;
+}
+
+.navLinkLi {
+    margin-left: 30px;
+    display: inline;
+}
+
+.logoRef {
+    align-self: center;
+    margin-left: 20px;
+}
+
+
+.textEnd {
+    /*child-align: right;*/
+    /*!*margin: auto;*!*/
+    /*alignment: right;*/
+    /*text-align-last: right;*/
+    /*text-align: right;*/
+    align-self: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 1300px) {
+    .textEnd {
+    }
+}
+
+.textButton {
+    padding: 8px 13px 8px 13px;
+    border: white solid 1px;
+    border-radius: 10px;
+}
+
+.login {
+    margin-right: 10px;
+    transition: 500ms;
+}
+
+.login:hover {
+    background-color: white;
+    color: black;
+}
+
+.register {
+    background-color: #FFC107;
+    border-color: black;
+    color: black;
+}
+
+.register:hover {
+    background-color: #fcc73c;
+}
+
+.authorizedText {
+    cursor: pointer;
+    color: #e1e1e1;
+}
