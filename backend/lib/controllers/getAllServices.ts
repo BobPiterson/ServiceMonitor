@@ -7,9 +7,8 @@ export const getAllServices: controllerType = async (req, res) => {
         const data = await MonitorModel.findAll({
             raw: true,
             order: [['id', 'ASC']],
-            attributes: ['url', 'inf_s', 'note']
+            attributes: ['url', 'inf_s']
         })
-        console.log(data)
         return res.status(ServerStatuses.OK).json({data})
     } else {
         return res.status(ServerStatuses.Error).json({message: 'Don`t authorized!'})

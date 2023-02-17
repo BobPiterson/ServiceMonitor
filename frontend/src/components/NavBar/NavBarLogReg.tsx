@@ -7,13 +7,13 @@ const NavBarLogReg = () => {
     return (
         <div className={classes.textEnd}>
             <NavLink
-                className={[classes.login, classes.navLink, classes.textButton].join(' ')}
-                to={routes.Login.path}
-            >{routes.Login.name}</NavLink>
-            <NavLink
                 className={[classes.register, classes.navLink, classes.textButton].join(' ')}
                 to={routes.SignUp.path}
             >{routes.SignUp.name}</NavLink>
+            <NavLink
+                className={[classes.login, classes.navLink, classes.textButton].join(' ')}
+                to={routes.Login.path}
+            >{routes.Login.name}</NavLink>
         </div>
     );
 };

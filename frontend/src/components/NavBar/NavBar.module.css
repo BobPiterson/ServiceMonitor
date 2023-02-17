@@ -1,7 +1,7 @@
 .navLink {
     user-select: none;
     -webkit-user-drag: none;
-    color: white;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -10,24 +10,26 @@
 }
 
 .CurrentNavLink {
-    color: #4c4b4d;
+    color: #a8a8a8;
     transition: 250ms;
 }
 
 .leftNavs:hover {
-    color: #868686;
+    color: #6b6b6b;
 }
 
 .navBar {
+    margin-top: 10px;
     font-size: 13pt;
     display: flex;
-    padding: 7px;
+    padding: 10px;
     vertical-align: middle;
+    background-color: white;
 }
 
 .navUl {
     padding: 0;
-    width: 100%;
+    width: calc(100vw - 500px);
     align-self: center;
     list-style: none;
 }
@@ -42,15 +44,8 @@
     margin-left: 20px;
 }
 
-
 .textEnd {
-    /*child-align: right;*/
-    /*!*margin: auto;*!*/
-    /*alignment: right;*/
-    /*text-align-last: right;*/
-    /*text-align: right;*/
     align-self: center;
-    margin-right: 10px;
     margin-left: 10px;
 }
 
@@ -60,32 +55,37 @@
 }
 
 .textButton {
-    padding: 8px 13px 8px 13px;
+    font-size: 11pt;
     border: white solid 1px;
-    border-radius: 10px;
 }
 
 .login {
+    color: black;
     margin-right: 10px;
     transition: 500ms;
+    margin-left: 14px;
 }
 
 .login:hover {
-    background-color: white;
-    color: black;
+    color: gray;
 }
 
 .register {
-    background-color: #FFC107;
     border-color: black;
+    padding: 10px 20px 10px 20px;
     color: black;
 }
 
 .register:hover {
-    background-color: #fcc73c;
+    border-color: gray;
+    color: gray;
 }
 
 .authorizedText {
+    text-align: center;
     cursor: pointer;
-    color: #e1e1e1;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: #000000;
 }

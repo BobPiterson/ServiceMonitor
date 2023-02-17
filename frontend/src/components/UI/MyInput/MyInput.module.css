@@ -4,18 +4,17 @@
     border-radius: 5px;
     outline: none;
     border: #e1e1e1 solid 1px;
-    font-family: system-ui, -apple-system, arial, serif;
+    font-family: 'Source Sans Pro', 'Lucida Grande', sans-serif;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-appearance: none;
 }
 
 .input::placeholder {
-    color: #e1e1e1;
+    color: #ffffff;
 }
 
 .input:focus {
-    border: #9fadf3 solid 1px;
-    -webkit-box-shadow: 0 0 1pt 1pt cornflowerblue;
-    box-shadow: 0 0 1pt 1pt cornflowerblue;
+    border: #4a66ff solid 2px !important;
 }

@@ -54,7 +54,7 @@ const RegisterForm = () => {
         }
 
         if (Password !== RepeatPassword) {
-            return setError('Passwords do not match!')
+            return setError('Пароли не совпадают!')
         }
 
         const hashPassword = await SHA512(Password)
@@ -67,9 +67,10 @@ const RegisterForm = () => {
     }
 
     return (
-        <Form nameForm="Регистрация" nameButton="Зарегистрироваться" fields={fields} click={ButtonClick} Error={Error}
-              CaptchaField={true}>
-            <p>Регистрируясь, вы соглашаетесь с <span className={classes.span}>Правилами использования</span></p>
+        <Form nameForm="Регистрация" nameButton="Создать аккаунт" fields={fields} click={ButtonClick} Error={Error}
+              CaptchaField={false}>
+            <p className={classes.p}>Регистрируясь, вы соглашаетесь с <span className={classes.span}>Правилами использования</span>
+            </p>
         </Form>
     );
 };
