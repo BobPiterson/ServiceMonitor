@@ -1,3 +1,9 @@
 .span {
-    color: blue;
+    text-decoration: underline;
 }
+
+.p {
+    text-align: center;
+    margin-bottom: 0;
+}
+

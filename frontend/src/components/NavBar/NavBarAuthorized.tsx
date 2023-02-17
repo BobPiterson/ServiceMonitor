@@ -19,7 +19,7 @@ const NavBarAuthorized: FC<NavBarAuthorizedProps> = ({login}) => {
 
     return (
         <div className={classes.textEnd} onClick={logout}>
-            <p className={[classes.login, classes.authorizedText, classes.textButton].join(' ')}>{login}</p>
+            <p className={[classes.authorizedText].join(' ')}>{login}</p>
         </div>
     );
 };

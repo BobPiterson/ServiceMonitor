@@ -1,0 +1,29 @@
+.container {
+    text-align: center;
+
+}
+
+.table {
+    padding: 10px;
+    color: white;
+    margin: auto;
+    text-align: left;
+}
+
+.table th {
+    padding-top: 10px;
+}
+
+
+.access {
+    background-color: #49b05d;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.notAccess {
+    background-color: #fc1f1f;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
