@@ -40,7 +40,6 @@ def bot():
             arr_notice = obj.send_notice()
             all_notice = arr_notice[0]
             dell = arr_notice[1]
-            print(all_notice)
             if all_users != {} and all_notice != {}:
                 cash = []
                 for id in all_notice:
@@ -56,10 +55,8 @@ def bot():
                         else:
                             break
                 obj.dell_notice(dell)
-                print("CASH ", cash)
                 if cash != []:
                     for user in cash:
-                        print(all_users, "--text")
                         del all_users[user]
                     cash.clear()
 

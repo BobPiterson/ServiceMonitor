@@ -9,5 +9,8 @@ export class MonitorModel extends Model {
     inf_s!: boolean
 
     @Column
-    note!: number
+    note!: boolean
+
+    @Column
+    error!: string
 }
