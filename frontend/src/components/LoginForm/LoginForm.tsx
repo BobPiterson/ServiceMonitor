@@ -15,14 +15,14 @@ const LoginForm = () => {
             Name: 'Login',
             Validator: {validate: validator.isAlpha, error: 'Incorrect Login'},
             Field: {
-                placeholder: "Login",
+                placeholder: "Логин",
             },
         },
         {
             Name: 'Password',
             Validator: {validate: validator.isAlphanumeric, error: 'Incorrect Password'},
             Field: {
-                placeholder: "Password",
+                placeholder: "Пароль",
                 type: 'password'
             },
         },

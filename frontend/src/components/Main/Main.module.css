@@ -7,14 +7,14 @@
 
 .h {
     margin: auto;
-    padding-top: 14vh;
+    padding-top: 10vh;
     font-size: 50pt;
     text-align: center;
 }
 
 .h2 {
     margin: 4vh auto auto;
-    width: 22vw;
+    width: 30vw;
     word-wrap: break-word;
 }
 
@@ -36,4 +36,5 @@
     border-radius: 30px;
     box-shadow: 0 10px 30px rgb(0 0 0 / 40%);
     padding: 12px 55px 12px 55px;
+    margin-bottom: 50px;
 }

@@ -10,17 +10,16 @@ const Main = () => {
                 Сайт для мониторинга
             </h1>
             <div className={classes.div1}>
-                We're npm, Inc., the company behind the npm Registry and npm CLI. We offer those to the community for
-                free, but our day job is building and selling useful tools for developers like you.
+                Данный сайт решает задачу автоматизированного выявления недоступности ресурсов, сервисов и приложений
+                высших учебных заведений
             </div>
             <h1 className={classes.h2}>
-                Take your JavaScript development up a notch
+                <a style={{color: "white"}} href='https://t.me/notice2023_bot'>Наш телеграм бот</a>
             </h1>
             <div className={classes.div1}>
-                Get started today for free, or step up to npm Pro to enjoy a premium JavaScript development experience,
-                with features like private packages.
+                Для удобства создан телеграм бот, который вас оповестит, когда выбранный вами сервис станет доступным
             </div>
-            <NavLink className={[classes.Link].join(' ')} to={routes.SignUp.path}>Sign up for free</NavLink>
+            <NavLink className={[classes.Link].join(' ')} to={routes.SignUp.path}>Зарегистрироваться</NavLink>
         </div>
     );
 };
