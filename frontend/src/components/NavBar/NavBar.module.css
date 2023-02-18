@@ -1,3 +1,12 @@
+.navBar {
+    align-items: center;
+    margin-top: 10px;
+    font-size: 13pt;
+    display: flex;
+    padding: 10px;
+    background-color: white;
+}
+
 .navLink {
     user-select: none;
     -webkit-user-drag: none;
@@ -18,18 +27,8 @@
     color: #6b6b6b;
 }
 
-.navBar {
-    margin-top: 10px;
-    font-size: 13pt;
-    display: flex;
-    padding: 10px;
-    vertical-align: middle;
-    background-color: white;
-}
-
 .navUl {
     padding: 0;
-    width: calc(100vw - 500px);
     align-self: center;
     list-style: none;
 }
@@ -46,7 +45,7 @@
 
 .textEnd {
     align-self: center;
-    margin-left: 10px;
+    margin-left: 30px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -71,13 +70,13 @@
 }
 
 .register {
-    border-color: black;
+    border-color: gray;
     padding: 10px 20px 10px 20px;
     color: black;
 }
 
 .register:hover {
-    border-color: gray;
+    border-color: #a9a9a9;
     color: gray;
 }
 

@@ -85,8 +85,8 @@ const Form: FC<FormProps> = (
             }
             {
                 fields.map((field, i) =>
-                    <div  key={i} >
-                        <p className={classes.fieldName}>{field.Name} *</p>
+                    <div key={i}>
+                        <p className={classes.fieldName}>{field.Field.placeholder} *</p>
                         <MyInput innerRef={el => itemsRef.current[i] = el}
                                  onKeyDown={keyDownHandler} {...field.Field}
                                  onClick={e => e.currentTarget.classList.remove(classes.fieldError)}/>

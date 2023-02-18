@@ -27,8 +27,8 @@ interface IRoutes {
 
 export const routes: IRoutes = {
     Home: {path: "/", element: HomePage, name: 'Home', permission: Permissions.all, show: true},
-    Login: {path: "/login", element: LoginPage, name: 'Sign In', permission: Permissions.all, show: false},
-    SignUp: {path: "/register", element: RegisterPage, name: 'Sign Up', permission: Permissions.all, show: false},
+    Login: {path: "/login", element: LoginPage, name: 'Вход', permission: Permissions.all, show: false},
+    SignUp: {path: "/register", element: RegisterPage, name: 'Регистрация', permission: Permissions.all, show: false},
     Panel: {path: "/panel", element: PanelPage, name: 'Admin panel', permission: Permissions.admin, show: true},
     Test: {path: "/test", element: TestPage, name: 'Test', permission: Permissions.test, show: true},
     Services: {path: "/services", element: ServicesPage, name: 'Services', permission: Permissions.registered, show: true},

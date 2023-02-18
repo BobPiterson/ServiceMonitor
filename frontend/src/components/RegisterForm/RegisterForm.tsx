@@ -16,14 +16,14 @@ const RegisterForm = () => {
             Name: 'Login',
             Validator: {validate: validator.isAlpha, error: 'Incorrect Login'},
             Field: {
-                placeholder: "Login",
+                placeholder: "Логин",
             },
         },
         {
             Name: 'Email',
             Validator: {validate: validator.isEmail, error: 'Incorrect Email'},
             Field: {
-                placeholder: "Email",
+                placeholder: "Почта",
                 type: 'email'
             },
         },
@@ -31,14 +31,14 @@ const RegisterForm = () => {
             Name: 'Password',
             Validator: {validate: validator.isAlphanumeric, error: 'Incorrect Password'},
             Field: {
-                placeholder: "Password",
+                placeholder: "Пароль",
                 type: 'password'
             },
         },
         {
             Name: 'RepeatPassword',
             Field: {
-                placeholder: "Repeat password",
+                placeholder: "Повтор пароля",
                 type: 'password'
             },
         }

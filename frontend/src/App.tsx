@@ -7,9 +7,11 @@ import {AuthContext} from "./context/AuthContext";
 import {serverResponsibilityContext} from './context/serverResponsibilityContext';
 import {AuthLocalStorageUser} from "./utils/AuthLocalStorageUser";
 import {serverResponses} from "./types/ServerResponseEnum";
+import {serviceContext} from './context/serviceContext';
 
 const App = () => {
     const [user, setUser] = useState({token: '', login: '', permission: ''})
+    const [service, setService] = useState('')
     const [status, setStatus] = useState(true)
 
     const setLocalUser = async () => {
@@ -26,15 +28,17 @@ const App = () => {
     }, [])
 
     return (
-        <AuthContext.Provider value={{user, setUser}}>
-            <serverResponsibilityContext.Provider value={{status, setStatus}}>
-                <GlobalStyles/>
-                <Router>
-                    <NavBar/>
-                    <MyRoutes/>
-                </Router>
-            </serverResponsibilityContext.Provider>
-        </AuthContext.Provider>
+        <serviceContext.Provider value={{service, setService}}>
+            <AuthContext.Provider value={{user, setUser}}>
+                <serverResponsibilityContext.Provider value={{status, setStatus}}>
+                    <GlobalStyles/>
+                    <Router>
+                        <NavBar/>
+                        <MyRoutes/>
+                    </Router>
+                </serverResponsibilityContext.Provider>
+            </AuthContext.Provider>
+        </serviceContext.Provider>
     );
 };
 

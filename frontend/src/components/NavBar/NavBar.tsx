@@ -8,6 +8,7 @@ import NavBarLogReg from "./NavBarLogReg";
 import {AuthContext} from "../../context/AuthContext";
 import NavBarAuthorized from "./NavBarAuthorized";
 import Logo from "../Logo/Logo";
+import Search from "../Search/Search";
 
 const NavBar = () => {
     const currentPath = useCurrentPathName()
@@ -19,6 +20,7 @@ const NavBar = () => {
                 <Logo mode={user.permission === 'admin'}/>
             </NavLink>
             <NavBarLinks currentPath={currentPath} permission={user.permission}/>
+            <Search/>
             {user.login
                 ? <NavBarAuthorized login={user.login}/>
                 : <NavBarLogReg/>

@@ -3,7 +3,7 @@
     padding: 10px;
     border-radius: 5px;
     outline: none;
-    border: #e1e1e1 solid 1px;
+    border: #e1e1e1 solid 2px;
     font-family: 'Source Sans Pro', 'Lucida Grande', sans-serif;
     transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
     box-sizing: border-box;
